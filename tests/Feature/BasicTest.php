@@ -1,11 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\Feature;
 
 use Tests\TestCase;
 
 /**
  * @internal
+ *
  * @coversNothing
  */
 final class BasicTest extends TestCase
@@ -16,7 +19,7 @@ final class BasicTest extends TestCase
      *
      * @test
      */
-    public function basic()
+    public function basic(): void
     {
         $response = $this->get(route('test'));
 
