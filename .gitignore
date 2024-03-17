@@ -1,0 +1,23 @@
+# Ignore hidden and temporary files by default
+.*
+*~
+
+# Exceptions - git
+!.gitattributes
+!.gitignore
+!.gitkeep
+
+# Exceptions - github
+!.github
+
+# Laravel files
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+auth.json
+npm-debug.log
+!.editorconfig
+!.env.example
