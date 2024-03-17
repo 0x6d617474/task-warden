@@ -7,6 +7,9 @@
 !.gitignore
 !.gitkeep
 
+# Exceptions - github
+!.github
+
 # Laravel files
 /node_modules
 /public/build
