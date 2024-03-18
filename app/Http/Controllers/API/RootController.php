@@ -19,4 +19,15 @@ final class RootController extends Controller
             ],
         ]);
     }
+
+    public function payload(Request $request): Response
+    {
+        return new Response([
+            'meta'  => new \stdClass(),
+            'data'  => null,
+            'links' => [
+                '_self' => route('api.root'),
+            ],
+        ]);
+    }
 }
